@@ -87,7 +87,7 @@
                 formData.append("file", fileInput.files[0]);
 
                 try {
-                    const response = await fetch("/predict", {
+                    const response = await fetch("https://lungs-0hw6.onrender.com/predict", {
                         method: "POST",
                         body: formData
                     });
